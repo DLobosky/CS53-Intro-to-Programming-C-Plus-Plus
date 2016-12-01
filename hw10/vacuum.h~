@@ -1,0 +1,27 @@
+//Programmer: Jason Beard               Date: 4/18/13
+//File: vacuum.h                        Class: CS 53
+//Purpose: vacuum class header file.
+
+#ifndef VACUUM_H
+#define VACUUM_H
+
+using namespace std;
+#include <iostream>
+#include "hw9.h"
+
+class vacuum
+{  
+  public:
+    vacuum();
+    void vac(trash t1);  
+    void empty();
+    bool isExploded();
+    bool isSparky();
+    
+  private:
+    trash bag[bag_size];
+    int tinbag;
+    bool shorted;
+    bool exploded;
+    const int bag_size = 35;
+};

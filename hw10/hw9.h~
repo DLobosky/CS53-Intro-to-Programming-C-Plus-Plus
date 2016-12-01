@@ -1,0 +1,14 @@
+#ifndef HW9_H
+#define HW9_H
+
+/*using namespace std;
+#include <iostream>
+#include "cleaner.h"*/
+
+struct point
+{
+  int x;
+  int y;
+};
+    
+#endif

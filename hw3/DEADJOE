@@ -1,0 +1,238 @@
+
+*** These modified files were found in JOE when it aborted on Mon Feb 11 21:18:48 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+[D[D[B
+*** These modified files were found in JOE when it aborted on Tue Feb 12 12:49:06 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+lab3
+hw3.cpp
+
+*** These modified files were found in JOE when it aborted on Tue Feb 12 20:18:00 2013
+*** JOE was aborted because the terminal closed
+
+*** File 'hw3.cpp'
+// Programmer: Dalton Lobosky        Date: 02/11/2013
+// Class: CS53       Section: C
+// Purpose: To create a program that will tell Marge Simpson what kind of 
+//  doughnut to make for Homer Simpson, based on how bad his morning is going.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  // Variable Declarations
+  const int MIN_THUMPS = 0, MIN_DOHS = 1, MAX_STEPS = 10, CLOTHES_DIV = 3;
+  const int CLOTHES_KRUSTY = 2, CLOTHES_WIGGUM = 0, MAX_COUNT = 3;
+  int thumps, dohs, steps, clothes, bacon, butter, steps_fall, velveeta;
+  int chx_skn = 0, grease_crm, count = 0;
+  bool krusty = 0, wiggum = 0, bacon_bool = 0, velveeta_bool = 0, butter_bool;
+  bool chx_skn_bool = 0, grease_bool = 0;
+
+  
+  // Greeting
+  cout << "Welcome, Marge, to your Doughnut Making Wizard!" << endl << endl
+  << endl;
+  
+  // Thumps Prompt
+  cout << "How many times has Homer hit his head on the floor this morning?" 
+  << endl;
+  cin >> thumps;
+  
+  // DOH Prompt
+  cout << endl << endl << "How many times did he yell DOH while shaving?"
+  << endl;
+  cin >> dohs;
+  
+  // Steps Prompt
+  cout << endl << endl << "How many successful steps did homer take before"
+  << " falling the rest?" << endl;
+  cin >> steps;
+  
+  // Clothing Prompt
+  cout << endl << endl <<"How many articles of clothing is Homer missing this"
+  << " morning?" << endl;
+  cin >> clothes;
+
+  // Data Cleansing
+  if (thumps >= MIN_THUMPS && dohs >= MIN_DOHS && steps <= MAX_STEPS)
+  {
+    // Logic  
+    if (thumps % 2 == MIN_THUMPS)
+    {
+      krusty = 1;
+      wiggum = 0;
+    }
+    else
+    {
+      wiggum = 1;
+      krusty = 0;
+    }
+    
+    if (krusty == 1 && wiggum == 0 && count < MAX_COUNT)
+    {
+      bacon = dohs;
+      bacon_bool = 1;
+      count++;
+    }
+    
+    if (wiggum == 1 && krusty == 0 && count < MAX_COUNT)
+    {
+      butter = dohs;
+      butter_bool = 1;
+      count++;
+    }
+    
+    if (count < MAX_COUNT)
+    {
+      velveeta = (MAX_STEPS - steps) + dohs;
+      velveeta_bool = 1;
+      count++;
+    
+    if (clothes % CLOTHES_DIV == 0 && count < MAX_COUNT)
+    {
+      chx_skn++;
+      chx_skn_bool = 1;
+      count++;
+    }
+    
+    if (krusty == 1 && clothes > CLOTHES_KRUSTY && count < MAX_COUNT && 
+    wiggum == 0)
+    {
+      grease_crm = 1;
+      grease_bool = 1;
+      count++;
+    }
+    
+    if (wiggum == 1 && clothes == CLOTHES_WIGGUM && krusty == 0 && 
+    chx_skn_bool == 1)
+    {
+      chx_skn += 2;
+    }
+      
+    if (wiggum == 1 && clothes == CLOTHES_WIGGUM && krusty == 0 &&
+    chx_skn_bool == 0)
+    {
+      chx_skn += 2;
+      chx_skn_bool = 1;
+      count++;
+    }
+    
+    if (krusty == 1 && wiggum )
+    {
+      
+    }
+    
+    if (wiggum == 1)
+    {
+      cout << endl << endl << "Go to Wiggumbase Doughnuts and get him a "
+      << " doughnut with: " <<  endl << butter << " Pats of butter" << endl
+      << velveeta << " Ounces of Velveeta" << endl << chx_skn
+      << " Chicken skin(s)" << endl << endl;
+    }
+    
+    cout << endl << endl << "His doughnut should contain: " << endl << endl; 
+  }
+  
+  else
+  {
+    cout << "Screw it, just give him a beer......" << endl << endl;
+  }
+  
+  return 0;
+}
+  
+
+*** These modified files were found in JOE when it aborted on Tue Feb 12 21:03:00 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+
+*** These modified files were found in JOE when it aborted on Tue Feb 12 21:58:46 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+
+*** These modified files were found in JOE when it aborted on Wed Feb 13 22:51:18 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+
+*** These modified files were found in JOE when it aborted on Fri Feb 15 11:36:37 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+
+*** These modified files were found in JOE when it aborted on Fri Feb 15 12:04:27 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3.cpp
+hw3
+hw3.cpp

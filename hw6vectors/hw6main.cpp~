@@ -1,0 +1,13 @@
+
+
+#include<iostream>
+#include "vectors.h"
+
+using namespace std;
+
+int main()
+{
+  show_menu();
+  choose();
+  return 0;
+}

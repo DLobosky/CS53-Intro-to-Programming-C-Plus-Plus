@@ -1,0 +1,34 @@
+// Dalton Lobosky        Section C1
+// 1/28/13
+
+1.) Step 1. Compare each letter of each word, starting with the first
+            letters, to each other. If the letters are the same go to the next
+            letter. Repeat until the two letters do not match.
+
+    Step 2. Once you find out which two letters do not match, determine their
+            assigned numerical values. Be sure to take into account if the
+            letters are capitalized or not.
+    
+    Step 3. Subtract the second letter's value FROM the first letter's value.
+            State the absolute value of the difference in values. If the words
+            are identical, make sure your output is "0".
+
+
+2.) Step 1. Move forward until sensing a wall or reaching goal.
+
+    Step 2. If a wall is sensed, turn left 90 degrees. 
+
+    Step 3. Repeat steps 1 and 2 until goal is reached.
+
+
+3.) Step 1. Any person with their own ID card may leave
+
+    Step 2. Have everyone line up in a single file line. 
+
+    Step 3. Have the first person trade ID cards with each person in the line
+            until they have their own ID card. Once they have their card they
+            may leave. Anyone else who might have also acquired their card in
+            this manner, may leave too. 
+
+    Step 4. Repeat steps 2 and 3 until everyone has their own ID card. 
+ 

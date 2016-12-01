@@ -1,0 +1,18 @@
+//Programmer: Keith Loveless                    Date: 19 April 2013
+//File: lib.h                                Class: CS 53 A
+//Purpose: holds function prototypes for driver.cpp
+
+#ifndef hw9lib_h
+#define hw9lib_h
+#include "hw9house.h"
+#include "hw9familyMember.h"
+#include <iostream>
+using namespace std;
+
+struct coordinate
+{
+  short m_row;
+  short m_col;
+};
+
+#endif

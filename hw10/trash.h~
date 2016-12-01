@@ -1,0 +1,25 @@
+//Programmer: Jason Beard               Date: 4/18/13
+//File: trash.h                        Class: CS 53
+//Purpose: trash class header file.
+
+#ifndef TRASH_H
+#define TRASH_H
+#include <iostream>
+using namespace std;
+
+class trash
+{
+  public:
+    trash();
+    string getname() const;
+    int getpotential() const;
+         
+  private:
+    string name;
+    int potential;
+};
+
+#endif
+
+
+

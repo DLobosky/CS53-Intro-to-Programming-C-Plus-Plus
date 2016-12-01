@@ -1,0 +1,62 @@
+// Programmer: Dalton Lobosky                   Date: 03/09/2013
+// Class: CS53                                  Section: C
+// Purpose: to write a program that will read in vector values 
+//          from the user and then compute several vector calculations. 
+
+#ifndef VECTORS_H
+#define VECTORS_H
+
+#include <iostream>
+
+using namespace std;
+
+struct vector
+{
+  float m_xVar;
+  float m_yVar;
+  float m_zVar;
+};
+
+// Pre: None
+// Post: Takes in data from user
+// Description: Performs a new choice that is chosen by the user 
+void choose();
+
+// Pre: None 
+// Post: Outputs readable vector to screen
+// Description: Displays a given input vector
+void show_Vect(const vector &VECT);
+
+// Pre: None
+// Post: Returns the values for a given vector
+// Description: 
+vector get_vect();
+
+// Pre: None
+// Post: 
+// Description: Takes the sum of two vectors
+vector sum_Vect(const vector &VECT1, const vector &VECT2););
+
+// Pre: None
+// Post: 
+// Description: Takes the magnitude of a given vector
+double mag_Vect(const vector &VECT1);
+
+// Pre: None
+// Post: 
+// Description: Computes the dot product of the 2 vectors
+float dot_Vect(const vector &VECT1, const vector &VECT2);
+
+// Pre: None
+// Post: 
+// Description: Computes the cross product of the 2 vectors
+vector cross_Vect(const vector &VECT1, const vector &VECT2);
+
+// Pre: None
+// Post: 
+// Description: Displays a menu with a list of options 
+void show_Menu();
+
+#endif
+#endif
+

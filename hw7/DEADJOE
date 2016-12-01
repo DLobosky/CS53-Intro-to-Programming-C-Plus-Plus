@@ -1,0 +1,320 @@
+
+*** These modified files were found in JOE when it aborted on Fri Mar 22 01:27:36 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+autoindent
+autoindent
+autoindent
+
+*** File '(Unnamed)'
+root
+root
+root
+
+*** File 'hw7func.cpp'
+// Programmer: Dalton Lobosky                   Date: 03/18/2013
+// File: hw7func.cpp                                  Section: C
+// Purpose: 
+
+
+#include<iostream>
+#include<cmath>
+#include "hw7header.h"
+
+using namespace std;
+
+void greeting()
+{
+  cout << "\n\nWelcome to your personal calculator!" << endl;
+
+  return;
+}
+
+void goodbye()
+{
+  cout << "\n\nGoodbye!" << endl << endl << endl << endl;
+
+  return;
+}
+
+vector get_Vect()
+{
+  vector vect;
+  
+  cout << endl << endl << "Enter the vectors \"X, Y, Z\"" << endl;
+  cout << "X:";
+  cin >> vect.m_xVar;
+  
+  cout << "Y:";
+  cin >> vect.m_yVar;
+  
+  cout << "Z:";
+  cin >> vect.m_zVar;
+  
+  return vect;
+
+}
+
+void menu_1()
+{
+  int option_1, option_2;
+
+  cout << endl << endl "Please make a selection: " << endl;
+  cout << "\n1: Enter 2 values" << endl;
+  cout << "2: Add values" << endl;
+  cout << "3: Multiply values" << endl;
+  cout << "4: Quit" << endl;
+  cin >> option1;
+  
+  do
+  {
+    switch (option_1)
+    {
+      case 1:
+      {
+        cout << endl << endl "Please make another selection: " << endl;
+        cout << "\n1: Floating Point Numbers" << endl;
+        cout << "2: Integer Numbers" << endl;
+        cout << "3: Vectors" << endl;
+        cin >> option_2;
+
+        menu_2();
+      }
+      break;
+    
+      case 2:
+      {
+        if (option_2 = 1)
+        {
+          add(fnum1, fnum2);
+        }
+        
+        else
+        {
+          cout << "ERROR: No data entered." << endl;
+        }
+        
+        if (option_2 = 2)
+        {
+          add(inum1, inum2);
+        }
+
+        else
+        {
+          cout << "ERROR: No data entered." << endl;
+        }
+
+        if (option_2 = 3)
+        {
+          add(vect_1, vect_2);
+          show_Vect(vectSum);
+        }
+        
+        else
+        {
+          cout << "ERROR: No data entered." << endl;
+        }
+
+      }
+      break;
+    
+      case 3:
+      {
+        multiply(num1, num2);
+        
+        if (option_2 = 1)
+        {
+          mulitply(fnum1, fnum2);
+        }
+
+        else
+        {
+          cout << "ERROR: No data entered." << endl;
+        }
+
+        if (option_2 = 2)
+        {
+          multiply(inum1, inum2);
+        }
+
+        else
+        {
+          cout << "ERROR: No data entered." << endl;
+        }
+
+        if (option_2 = 3)
+        {
+          multiply(vect_1, vect_2);
+          show_V
+        }
+
+        else
+        {
+          cout << "ERROR: No data entered." << endl;
+        }
+
+      }
+      break;
+    
+      case 4:
+      {
+        quit = true;
+      }
+      break;
+    }
+  }while(option_1 <= 0 || option_1 > 4);
+  
+  return;
+}
+
+void menu_2(const int &option_2)
+{
+  int inum1, inum2;
+  vector vect_1, vect_2;
+  float fnum1, fnum2;
+  
+  do
+  {
+    switch (option_2)
+    {
+      case 1:
+      {
+        cout << "\n\nPlease enter your two floating point numbers." << endl;
+      
+        cout << "Number 1: " << endl;
+        cin >> fnum1;
+      
+        cout << "Number 2: " << endl;
+        cin >> fnum2;
+      
+        menu_1();
+      }
+      break;
+
+      case 2:
+      {
+        cout << "\n\nPlease enter your two integer numbers." << endl;
+
+        cout << "Number 1: " << endl;
+        cin >> inum1;
+
+        cout << "Number 2: " << endl;
+        cin >> inum2;
+      }
+      break;
+
+      case 3:
+      {
+        cout << "\n\nPlease enter your two vectors." << endl;
+
+        cout << "Vector 1: " << endl;
+        vect_1 = get_Vect();
+
+        cout << "Vector 2: " << endl;
+        vect_2 = get_Vect();
+      }
+      break;
+    }
+  }while(option_2 > 0 && option_2 < 4);
+  
+  return;
+}
+
+float multiply(const vector &vect_1, const vector &vect_1)
+{
+    return ((vect_1.m_xVar*vect_2.m_xVar) + (vect_1.m_yVar*vect_2.m_yVar)
+      + (vect_1.m_zVar*vect_2.m_zVar));
+}
+
+vector add(const vector &vect_1, const vector &vect_2)
+{
+  vector vectSum;
+  
+  vectSum.m_xVar = (vect_1.m_xVar + vect_2.m_xVar);
+  vectSum.m_yVar = (vect_1.m_yVar + vect_2.m_yVar);
+  vectSum.m_zVar = (vect_1.m_zVar + vect_2.m_zVar);
+  
+  return vectSum;
+}         
+
+
+*** These modified files were found in JOE when it aborted on Fri Mar 22 02:42:07 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hw7header.h
+hw7header.h
+hw7func.cpp
+hw7func.cpp
+hw7func.cpp
+hw7func.cpp
+hw7header.h
+hw7header.h
+hw7func.cpp
+hw7func.hpp
+hw7func.cpp
+hw7func.cpp
+
+*** These modified files were found in JOE when it aborted on Fri Apr 12 11:31:19 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+autoindent
+
+*** File '(Unnamed)'
+root
+
+*** File 'hw7main.cpp'
+// Programmer: Dalton Lobosky                   Date: 03/18/2013
+// File: hw7main.cpp                                  Section: C
+// Purpose: 
+
+
+#include<iostream>
+#include "hw7header.h"
+
+using namespace std;
+
+int main()
+{
+  int option_2, inum1, inum2;
+  bool quit = false;
+  vector vectSum;
+  float fnum1, fnum2;
+  
+  greeting();
+  
+  do
+  {
+    menu_1(quit, vectSum, option_2, fnum1, fnum2, inum1, inum2);
+    
+  }while(quit == false);
+  
+  goodbye();
+  
+  return 0;
+}
+
+// Purpose: The file drives the hw8func.cpp file
+//
+// File: hw8main.cpp
+//*****************************************************************************
+
+*** File '(Unnamed)'
+
+*** These modified files were found in JOE when it aborted on Wed May  8 22:21:37 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+lab14gdb.cpp
+vacuum.cpp
+trash.cpp
+trash.cpp
+hw9.cpp
+hw9.cpp
+hw9.cpp
+hw9.cpp
+hw4
+hw4.h
+hw7header.h

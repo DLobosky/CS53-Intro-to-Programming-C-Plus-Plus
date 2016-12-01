@@ -1,0 +1,42 @@
+//Programmer: Keith Loveless                    Date: 19 April 2013
+//File: lib.h                                Class: CS 53 A
+//Purpose: holds function prototypes for driver.cpp
+
+#ifndef lib_h
+#define lib_h
+#include "house.h"
+#include "family_member.h"
+#include <iostream>
+using namespace std;
+
+//class family_member;
+//#include "family_member.h"
+//class house;
+
+struct coordinate
+{
+  short m_row;
+  short m_col; //col stands for column
+};
+
+//class house;
+//class family_member;
+/*
+void scan_house(family_member & fm, house & h)
+{
+  for(int i = 0; i < h.get_row(); ++i)
+  {
+    for(int j = 0; j < h.get_col(); ++j)
+    {
+      if(h.get_floor(i,j) == fm.get_name()[0])
+      {
+        fm.set_row(j);
+        fm.set_col(i);
+      }
+    }
+  }
+  if(h.get_floor(fm.get_row(),fm.get_col()) != fm.get_name()[0])
+    cout << "No family member found" << endl;
+  return;
+}*/
+#endif

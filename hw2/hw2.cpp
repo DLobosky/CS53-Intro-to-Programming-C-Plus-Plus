@@ -1,0 +1,58 @@
+// Progammer: Dalton Lobosky       Date: 02/07/2013
+// File: hw2.cpp       Class: cs53     Section: C
+
+// The program will compute the length of Marge Simpson's hair after entering 
+//  the desired values of number of cans of hairspray used, number of days
+//  that it has been since her hair has been cut, whether or not she used
+//  mousse, and what temperature her hair iron was at. 
+
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  // Variable Declaration
+
+    float const G = 9.98, RATE = 0.2;
+    
+    int days, cans;
+
+    bool mousse;
+
+    float temp, hh;
+
+  // Greeting
+    cout << endl << endl << endl << "Welcome, Marge, to your hair length";
+    cout << " calculator." << endl << endl << endl;
+
+  // Days
+    cout << "How many days has it been since your last hair cut?" << endl;
+    cin >> days;
+
+  // Cans
+    cout << endl << "How many cans of hairspray did you use?" << endl;
+    cin >> cans;
+  
+  // Mousse
+    cout << endl << "Did you use mousse? Yes: 1   No: 0" << endl;
+    cin >> mousse;
+   
+  // Temp
+    cout << endl << "What was your hair iron temperature?" << endl;
+    cin >> temp;
+
+  // Formula
+    hh = ((static_cast<float>(cans)/(days + 1)) * (2 + temp) - G + (mousse
+    * RATE * days));
+    
+    cout << endl << endl << endl << "Your hair height is " << hh << " inches!"
+    << endl << endl;
+    
+  // Salutation
+    cout << "You look FABULOUS!" << endl << endl << "Goodbye." << endl << endl;
+    
+    return 0;
+                                                 
+}
+                                                   

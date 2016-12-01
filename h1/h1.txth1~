@@ -1,0 +1,17 @@
+// Dalton Lobosky        Section C1
+// 1/28/13
+
+1.) Step 1. Compare each letter of each word, starting with the first
+            letters, to each other. If the letters are the same go to the next
+            letter.
+
+    Step 2. Repeat until the two letters do not match. Once you find out which 
+            two letters do not match, determine their assigned numerical values.
+            Be sure to take into account if the letter is capitalized or not.
+    
+    Step 3. Subtract the second letter's value FROM the first letter's value.
+            State the absolute value of the difference in values. If the words
+            are identical, make sure your output is "0".
+
+
+2.) 

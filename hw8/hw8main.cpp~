@@ -1,0 +1,16 @@
+// Programmer: Dalton Lobosky                   Date: 04/10/2013
+// File: hw8main.cpp                                  Section: C
+// Purpose: The file drives the hw8func.cpp file
+//
+// File: hw8main.cpp
+//*****************************************************************************
+
+
+#include<iostream>
+#include "hw8header.h"
+
+using namespace std;
+
+int main()
+{
+}

@@ -1,0 +1,22 @@
+// Programmer: Dalton Lobosky                   Date: 04/10/2013
+// File: hw8func.cpp                                  Section: C
+// Purpose: The file that contains all the funnction definitions for the 
+//          hw8header.h file
+//
+// File: hw8func.cpp
+//*****************************************************************************
+
+
+
+#include<iostream>
+#include<cmath>
+#include "hw8header.h"
+
+using namespace std;
+
+void greeting()
+{
+  cout << "\n\nWelcome to your personal calculator!" << endl;
+
+  return;
+}
